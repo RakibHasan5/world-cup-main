@@ -1,10 +1,12 @@
-/*-------------- Banner section----------- */
+/*--------------------------------------------------------------------------------- Banner section-------------------
+-------------------------------------------------- */
 body {
     background-color: white;
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
-.box {
+.bannar-section {
     display: flex;
     justify-content: center;
 }
@@ -14,7 +16,6 @@ body {
     height: 646px;
     margin-top: 50px;
     display: flex;
-    /* justify-content: space-around; */
     border-radius: 20px;
     background-color: black;
 
@@ -22,26 +23,24 @@ body {
 
 .half-width {
     width: 50%;
-    /* padding: 10%; */
     padding-left: 150px;
 }
 
-.ban {
+.text-container {
     margin-top: 30%;
     color: aliceblue;
 }
 
-#ban1 {
+#text-area-1 {
     font-size: 50px;
     font-weight: 800;
+    margin-bottom: 0;
 }
 
-#ban3 {
+#text-area-2 {
     color: white;
     font-size: 20px;
-    /* font-weight: 200; */
     background-color: #DD0000;
-    /* margin-top: 30px; */
     padding: 10px;
     border-radius: 2px;
     text-decoration: none;
@@ -55,64 +54,15 @@ body {
 
 }
 
-/* -------------- middle section -------------- */
-.box-1 {
+/* -------------- --------------------------------
+---------------middle section ------------------------
+-------------------------------------- */
+.mid-section {
     display: flex;
     justify-content: center;
 }
 
-.container-1 {
-    width: 1321px;
-    height: 646px;
-    margin-top: 50px;
-    /* display: flex; */
-    /* justify-content: space-around; */
-    border-radius: 20px;
-    background-color: #1616165e;
-}
-
-
-.toggol {
-    background-color: #161616;
-    position: absolute;
-    width: 312px;
-    height: 312px;
-    /* left: 140px;
-    top: 826px; */
-    border-radius: 5px;
-}
-
-.togo {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    /* margin: 30px; */
-}
-
-.toggol-to {
-    background-color: white;
-    /* width: 252px;
-    height: 64px; */
-    padding: 20px 40px;
-    border-radius: 5px;
-    text-align: center;
-    margin: 20px;
-    text-decoration: none;
-}
-
-/* -----------------?----------------- */
-/* .grid {
-    display: ;
-    background-color: #161616;
-    position: absolute;
-    width: 312px;
-    height: 500px;
-    left: 140px;
-        top: 826px;
-    border-radius: 5px;
-} */
-
-.half {
+.grid-layout {
     width: 1321px;
     height: 646px;
     margin-top: 50px;
@@ -122,24 +72,13 @@ body {
 
 }
 
-.half-part {
-    /* background-color: #c058586f; */
-    /* width: 312px;
-    height: 312px;
-    border-radius: 5px;
-    width: 20%; */
-}
-
-/* .half-part .part {
-    margin-left: 20px;
-} */
-
-#holf {
+/* -------------single-grid------------------------------ */
+.half-grid-layout {
     width: 25%;
     margin-right: 20px;
 }
 
-.hp {
+.grid-anchor {
     background-color: black;
     width: 100%;
     height: 312px;
@@ -149,7 +88,7 @@ body {
     align-items: center;
 }
 
-.hp a {
+.grid-anchor a {
     background-color: aliceblue;
     width: 150px;
     /* height: 60px; */
@@ -160,14 +99,20 @@ body {
     color: black;
 }
 
+#blog {
+    background-color: red;
+    color: white;
+}
 
-#holf1 {
+/* -----------------///// grid item /////----------------------- */
+.half-grid-3column {
+    margin-top: -20px;
     width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr)
 }
 
-.part {
+.grid-detail {
     background-color: white;
     height: 380px;
     border: 2px solid rgb(239, 237, 232);
@@ -176,12 +121,12 @@ body {
 }
 
 
-.part img {
+.grid-detail img {
     width: 100%;
     margin-bottom: 30px;
 }
 
-.part a {
+.grid-detail a {
     color: black;
     border: 1px solid black;
     border-radius: 5px;
@@ -190,10 +135,50 @@ body {
     text-decoration: none;
 }
 
-.part h4 {
+.grid-detail h4 {
     margin-left: 20px;
 }
 
-.part p {
+.grid-detail p {
     margin-left: 20px;
+}
+
+.logo {
+    display: flex;
+}
+
+
+/*---------------------------------------------------- 
+             /////   footer  ///////////
+-------------------------------------------------= */
+.footer {
+    margin-top: 20%;
+    padding: 10%;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.footer-detail {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* ----------------------------------------------------------
+               ///////// Media Querris////////////////
+---------------------------------------------------------- */
+
+/*------------ Mobile Device -----------------*/
+@media only screen and (max-width:688px) {
+
+    .bannar-section {
+        width: auto;
+    }
+
+    .container {
+        background-color: red;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
 }
