@@ -1,4 +1,4 @@
-/*--------------------------------------------------------------------------------- Banner section-------------------
+/*----------------------------------------------------------------            Banner section
 -------------------------------------------------- */
 body {
     background-color: white;
@@ -15,8 +15,8 @@ body {
     width: 1321px;
     height: 646px;
     margin-top: 50px;
+    border-radius: 30px;
     display: flex;
-    border-radius: 20px;
     background-color: black;
 
 }
@@ -34,16 +34,21 @@ body {
 #text-area-1 {
     font-size: 50px;
     font-weight: 800;
-    margin-bottom: 0;
+    margin-bottom: -5px;
 }
 
 #text-area-2 {
+    margin-bottom: 30px;
+}
+
+#text-area-3 {
     color: white;
     font-size: 20px;
+    text-decoration: none;
     background-color: #DD0000;
     padding: 10px;
     border-radius: 2px;
-    text-decoration: none;
+
 }
 
 .half-width img {
@@ -64,7 +69,6 @@ body {
 
 .grid-layout {
     width: 1321px;
-    height: 646px;
     margin-top: 50px;
     border-radius: 20px;
     background-color: white;
@@ -82,7 +86,7 @@ body {
     background-color: black;
     width: 100%;
     height: 312px;
-    border-radius: 5px;
+    border-radius: 15px;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -91,7 +95,6 @@ body {
 .grid-anchor a {
     background-color: aliceblue;
     width: 150px;
-    /* height: 60px; */
     text-align: center;
     padding: 15px 25px;
     text-decoration: none;
@@ -104,7 +107,7 @@ body {
     color: white;
 }
 
-/* -----------------///// grid item /////----------------------- */
+/* -----------------/////player grid item /////----------------------- */
 .half-grid-3column {
     margin-top: -20px;
     width: 80%;
@@ -116,7 +119,7 @@ body {
     background-color: white;
     height: 380px;
     border: 2px solid rgb(239, 237, 232);
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 20px;
 }
 
@@ -152,8 +155,8 @@ body {
              /////   footer  ///////////
 -------------------------------------------------= */
 .footer {
-    margin-top: 20%;
-    padding: 10%;
+    margin-top: 10%;
+    padding: 5% 20%;
     color: white;
     background-color: black;
     text-align: center;
@@ -162,7 +165,22 @@ body {
 .footer-detail {
     display: flex;
     justify-content: space-evenly;
+    margin: 30px;
 }
+
+.fa-brands {
+    color: white;
+    padding: 30px;
+}
+
+.footer-detail a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
 
 /* ----------------------------------------------------------
                ///////// Media Querris////////////////
